@@ -21,7 +21,7 @@ public class activity_profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_profile);
-        ImageView btnBack2339 = findViewById(R.id.backButton);
+        ImageView btnBack2339 = findViewById(R.id.settingsButton);
         btnBack2339.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
