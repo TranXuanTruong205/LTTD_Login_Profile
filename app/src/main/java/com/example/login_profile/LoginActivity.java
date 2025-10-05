@@ -13,7 +13,13 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        TextView btn_2339 = findViewById(R.id.txtSignUp);
-
+        TextView btn_2339 = findViewById(R.id.btnLogin);
+        btn_2339.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent_2339 = new Intent(LoginActivity.this,activity_profile.class);
+                startActivity(myintent_2339);
+            }
+        });
     }
 }
